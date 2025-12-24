@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="La Paradita Caf&#233;">
+  <g fill="none" stroke="#0B3B57" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 72h104l-10 56a18 18 0 0 1-18 14H76a18 18 0 0 1-18-14z" />
+    <path d="M150 86h18a14 14 0 0 1 0 28h-14" />
+    <path d="M70 54c-10 -10 -4 -20 4 -26" />
+    <path d="M98 54c-10 -10 -4 -20 4 -26" />
+    <path d="M84 48c-8 -8 -3 -18 5 -24" />
+  </g>
+  <path d="M46 148h110" stroke="#F2E08A" stroke-width="6" stroke-linecap="round" />
+  <text x="100" y="172" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" font-weight="600" fill="#0B3B57">La Paradita</text>
+  <text x="100" y="190" text-anchor="middle" font-family="Manrope, sans-serif" font-size="10" font-weight="600" fill="#0B3B57" letter-spacing="1">CAF&#201;</text>
+</svg>
