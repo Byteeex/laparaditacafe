@@ -397,7 +397,7 @@ h4 {
 
 .item-price {
   font-weight: 700;
-  color: var(--color-accent);
+  color: #f2e08a; /* restore original yellow for menu prices */
   background: var(--color-primary);
   padding: 4px 10px;
   border-radius: 999px;
