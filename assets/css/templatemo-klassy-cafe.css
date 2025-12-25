@@ -152,20 +152,19 @@ h4 {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(251, 249, 244, 0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
-}
+    --color-accent: #8b5a3c;
+    --color-bg: #fbf9f4;
+    --color-text: #0b2f44;
+    --color-muted: #58656f;
 
 .header-area.background-header {
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0 10px 30px rgba(43, 38, 35, 0.1);
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
+    font-family: var(--font-heading);
+    margin: 0 0 12px;
+    color: var(--color-accent);
   justify-content: space-between;
   min-height: 78px;
   gap: 24px;
