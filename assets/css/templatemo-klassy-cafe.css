@@ -5,6 +5,7 @@
   --color-accent: #1ea3a3;
   --color-bg: #fbf9f4;
   --color-text: #0b2f44;
+  --color-heading: #6b3a2a;
   --color-muted: #58656f;
   --color-border: #e4ddd2;
   --radius-sm: 8px;
@@ -86,7 +87,7 @@ ul {
 .section-heading h2 {
   font-family: var(--font-heading);
   font-size: 36px;
-  color: var(--color-text);
+  color: var(--color-heading);
   margin-bottom: 12px;
 }
 
@@ -96,7 +97,7 @@ h3,
 h4 {
   font-family: var(--font-heading);
   margin: 0 0 12px;
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 
 .btn {
@@ -356,6 +357,11 @@ h4 {
 .menu-body h3 {
   margin-bottom: 12px;
   font-size: 22px;
+}
+
+/* Keep menu titles in the original text color (do not inherit brown) */
+.menu-body h3 {
+  color: var(--color-text);
 }
 
 .menu-subtitle {
