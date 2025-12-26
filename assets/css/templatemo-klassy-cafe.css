@@ -2,10 +2,9 @@
   --color-primary: #0b3b57;
   --color-primary-dark: #072536;
   --color-secondary: #f7f2e7;
-  --color-accent: #1ea3a3;
+  --color-accent: #f2e08a;
   --color-bg: #fbf9f4;
   --color-text: #0b2f44;
-  --color-heading: #6b3a2a;
   --color-muted: #58656f;
   --color-border: #e4ddd2;
   --radius-sm: 8px;
@@ -75,19 +74,10 @@ ul {
   margin-bottom: 12px;
 }
 
-/* Make small accent titles more visible: bolder + subtle shadow */
-.section-heading h6,
-.eyebrow,
-.menu-subtitle {
-  color: var(--color-accent);
-  font-weight: 700;
-  text-shadow: 0 1px 0 rgba(11, 47, 68, 0.08);
-}
-
 .section-heading h2 {
   font-family: var(--font-heading);
   font-size: 36px;
-  color: var(--color-heading);
+  color: var(--color-text);
   margin-bottom: 12px;
 }
 
@@ -97,7 +87,7 @@ h3,
 h4 {
   font-family: var(--font-heading);
   margin: 0 0 12px;
-  color: var(--color-heading);
+  color: var(--color-text);
 }
 
 .btn {
@@ -152,19 +142,20 @@ h4 {
   left: 0;
   right: 0;
   z-index: 1000;
-    --color-accent: #8b5a3c;
-    --color-bg: #fbf9f4;
-    --color-text: #0b2f44;
-    --color-muted: #58656f;
+  background: rgba(251, 249, 244, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
 
 .header-area.background-header {
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0 10px 30px rgba(43, 38, 35, 0.1);
 }
 
-    font-family: var(--font-heading);
-    margin: 0 0 12px;
-    color: var(--color-accent);
+.main-nav {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   min-height: 78px;
   gap: 24px;
@@ -358,11 +349,6 @@ h4 {
   font-size: 22px;
 }
 
-/* Keep menu titles in the original text color (do not inherit brown) */
-.menu-body h3 {
-  color: var(--color-text);
-}
-
 .menu-subtitle {
   font-size: 12px;
   letter-spacing: 1px;
@@ -402,7 +388,7 @@ h4 {
 
 .item-price {
   font-weight: 700;
-  color: #f2e08a; /* restore original yellow for menu prices */
+  color: var(--color-accent);
   background: var(--color-primary);
   padding: 4px 10px;
   border-radius: 999px;
@@ -693,19 +679,7 @@ footer h4 {
     flex-wrap: wrap;
     gap: 12px;
     position: relative;
-  }
-
-  /* Ensure menu button stays at the right on small screens */
-  .main-nav .logo { order: 1; }
-  .main-nav .nav { order: 2; }
-  .menu-trigger { order: 3; margin-left: auto; }
-
-  /* Stronger placement: pin the toggle to the right of the nav */
-  .menu-trigger {
-    position: absolute;
-    right: 12px;
-    top: 14px;
-    margin-left: 0;
+    align-items: center;
   }
 
   .main-nav .logo img {
@@ -714,9 +688,9 @@ footer h4 {
   }
 
   .main-nav .nav {
-    width: auto;
+    width: 100%;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
     background: #fff;
     padding: 12px;
     display: none;
@@ -724,12 +698,11 @@ footer h4 {
     box-shadow: var(--shadow-card);
     border: 1px solid var(--color-border);
     position: absolute;
-    top: 78px;
-    left: 12px;
-    right: 12px;
+    top: 76px;
+    left: 0;
+    right: 0;
     max-height: 60vh;
     overflow-y: auto;
-    z-index: 1500;
   }
 
   .main-nav .nav li {
@@ -743,11 +716,6 @@ footer h4 {
     border-radius: 12px;
     background: var(--color-bg);
     border: 1px solid transparent;
-  }
-
-  /* Add small spacing between nav items for clarity */
-  .main-nav .nav li + li {
-    margin-top: 8px;
   }
 
   .main-nav .nav li a.active,
@@ -774,6 +742,8 @@ footer h4 {
     border-radius: 999px;
     border: 1px solid var(--color-border);
     box-shadow: 0 8px 18px rgba(11, 47, 68, 0.12);
+    margin-left: auto;
+    z-index: 1600;
   }
 
   .hero {
