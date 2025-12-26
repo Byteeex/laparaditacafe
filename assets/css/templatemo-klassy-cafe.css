@@ -700,6 +700,14 @@ footer h4 {
   .main-nav .nav { order: 2; }
   .menu-trigger { order: 3; margin-left: auto; }
 
+  /* Stronger placement: pin the toggle to the right of the nav */
+  .menu-trigger {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    margin-left: 0;
+  }
+
   .main-nav .logo img {
     height: 52px;
     width: 52px;
